@@ -14,6 +14,9 @@ login.login("standard_user","secret_sauce")
 cy.url().should("include","inventory")
 cy.get(".title").should("contain","Products")
 
+cy.url().should("include","inventory")
+cy.get(".title").should("contain","Products")
+
 cy.url().should("include", "inventory")
 
     inventory.addBackpack()
