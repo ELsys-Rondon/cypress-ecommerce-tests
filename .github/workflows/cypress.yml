@@ -12,11 +12,5 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v3
 
-      - name: Install dependencies
-        run: npm install
-
-      - name: Fix Cypress permissions
-        run: chmod +x node_modules/.bin/cypress
-
-      - name: Run Cypress tests
-        run: npx cypress run
+      - name: Cypress run
+        uses: cypress-io/github-action@v6
